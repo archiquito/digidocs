@@ -25,7 +25,7 @@ export default function Account({ open, onClose }: ModalProps) {
         <Modal title="Crie sua conta" open={open} onClose={handleClose}>
             <>
             <div>
-                <Typography>Nome:</Typography>
+                <Typography>Nomeaaaaa:</Typography>
                 <TextField onChange={handleChange} name="name" value={account.name} type="text" />
             </div>
             <div>
