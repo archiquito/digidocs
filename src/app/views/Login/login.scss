@@ -1,0 +1,22 @@
+.login {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: auto;
+    margin-top: 40px;
+    & .MuiTextField-root{
+        margin: 5px 0;
+        width: 100%;
+        &:focus {
+            border: none;
+            outline: none;
+          }
+    }
+    & .footer-links {
+        display: flex;
+        justify-content: space-between;
+        & .mui-1uent87-MuiButtonBase-root-MuiButton-root {
+            text-transform: none;
+        }
+    }
+}
