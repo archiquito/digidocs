@@ -25,6 +25,9 @@ This project uses [`next/font`](https://nextjs.org/docs/app/building-your-applic
 Rodar os comandos do prisma ORM para setar o BD e tabelas
 [Prisma] (https://www.prisma.io/docs/getting-started/quickstart-sqlite)
 
+# Upload de arquivos
+os arquivos estão hospedados em cloudnary
+
 ## Learn More
 
 To learn more about Next.js, take a look at the following resources:
