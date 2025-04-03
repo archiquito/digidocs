@@ -1,6 +1,8 @@
 ;
-import Login from "./views/Login/Login";
+import Login from "./views/login/page";
 import "./page.scss";
+import { GetServerSideProps } from "next";
+import Dashboard from "./dashboard/page";
 
 
 export default function Home() {
@@ -11,4 +13,10 @@ export default function Home() {
 
     </div>
   );
+}
+
+export const getServerSidePropos: GetServerSideProps = async () => {
+  return {
+    props:{},
+  }
 }

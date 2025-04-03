@@ -11,8 +11,9 @@ export interface ModalProps {
     onClose: (open: boolean) => void;
     children: React.ReactNode;
     title?: string | React.ReactNode;
+    footer?: string | React.ReactNode;
 }
-export default function Modal({ open, onClose, children, title}: ModalProps) {
+export default function Modal({ open, onClose, children, title, footer}: ModalProps) {
 
       const handleClose = () => {
         onClose(!open)
@@ -32,10 +33,7 @@ export default function Modal({ open, onClose, children, title}: ModalProps) {
           {children}
         </DialogContent>
         <DialogActions>
-          <Button onClick={handleClose}>Fechar</Button>
-          <Button onClick={handleClose} autoFocus>
-            Enviar
-          </Button>
+          { footer }
         </DialogActions>
       </Dialog>
     )
